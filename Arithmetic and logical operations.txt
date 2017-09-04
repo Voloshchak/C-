@@ -1,0 +1,72 @@
+using System;
+
+namespace hwapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Concatenation
+            string str1 = "Hello", str2 = "World!";
+            Console.WriteLine(str1 + ", " + str2);
+
+            //Unary operators. Incrementation and decrementing can be prefixed and postfix
+            int incrementVariable = 0, decrementVariable = 3, variablePrefixed = 5, variableForExample = 7, result;
+            incrementVariable++;
+            decrementVariable--;
+            //postfix
+            Console.WriteLine("Before increment = 0, after = " + incrementVariable + "; " + "Before decrement = 3, after = " + decrementVariable);
+
+            //prefixed
+            result = variableForExample + ++variablePrefixed;
+            Console.WriteLine("First run increment next sum (5 + ++7) = " + result);
+
+            //Use a brief form of expression
+            int a = 5, b = 7;
+            a += b; //Equivalent to an expression a = a + b;
+            a -= b; //Equivalent to an expression a = a - b;
+            a *= b; //Equivalent to an expression a = a * b;
+            a /= b; //Equivalent to an expression a = a / b;
+            a %= b; //Equivalent to an expression a = a % b;
+
+            //Raising a number to a degree
+            double raisingOperationResult, someVariable = 4;
+            raisingOperationResult = Math.Pow(someVariable, 2);
+            Console.WriteLine(raisingOperationResult);
+
+            //Finding the square root
+            double rootResult, someVariableForSqrt = 9;
+            rootResult = Math.Sqrt(someVariableForSqrt);
+            Console.WriteLine(rootResult);
+
+            //Logical Operators
+            //! - the "NOT" operator is unary and returns the opposite value of the operand.
+            bool logicResult, someTrue = true, someFalse = false;
+            logicResult = !someTrue; // return "false"
+            logicResult = !someFalse; //return "true"
+
+            //|| - the "OR" operator is binary and returns false only if both operands are false, otherwise the result is true
+            logicResult = someFalse || someFalse; //false
+            logicResult = someFalse || someTrue; //true
+            logicResult = someTrue || someFalse; //true
+            logicResult = someTrue || someTrue; //true
+
+            //&& - the "AND" operator is binary and returns true only when both operands are true, otherwise the result is false
+            logicResult = someFalse && someFalse; //false
+            logicResult = someFalse && someTrue; //false
+            logicResult = someTrue && someFalse; //false
+            logicResult = someTrue && someTrue; //true
+
+            //Home Work
+            double cathetus1 = 5, cathetus2 = 7, s, hypotenuse;
+            hypotenuse = Math.Sqrt(Math.Pow(cathetus1, 2) + Math.Pow(cathetus2, 2));
+            s = cathetus1 * cathetus2 / 2;
+            Console.WriteLine("Hypotenuse = " + hypotenuse + " and square = " + s);
+
+            //General formula of the cosine theorem
+            hypotenuse = Math.Sqrt(Math.Pow(cathetus1, 2) + Math.Pow(cathetus2, 2) - 2 * cathetus1 * cathetus2 * Math.Cos(90 * Math.PI / 180));
+            Console.WriteLine("Hypotenuse = " + hypotenuse);
+
+        }
+    }
+}

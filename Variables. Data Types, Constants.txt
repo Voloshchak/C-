@@ -1,0 +1,75 @@
+using System;
+
+namespace hwapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            sbyte minimalValueSByte, maximalValueSByte; //Variable: Type sbyte. Min = -128, Max = 127
+            minimalValueSByte = SByte.MinValue;
+            maximalValueSByte = SByte.MaxValue;
+            Console.WriteLine("Minimal sbyte value = " + minimalValueSByte + ";" + " Maximal sbyte value = " + maximalValueSByte);
+
+            byte minimalValueByte, maximalValueByte; //Variable: Type sbyte. Min = 0, Max = 255
+            minimalValueByte = Byte.MinValue;
+            maximalValueByte = Byte.MaxValue;
+            Console.WriteLine("Minimal byte value = " + minimalValueByte + ";" + " Maximal byte value = " + maximalValueByte);
+
+            char firstChar, lastChar; //Variable: Type char. First = U+0000, Last = U+ffff
+            firstChar = Char.MinValue;
+            lastChar = Char.MaxValue;
+            Console.WriteLine("Minimal char value = " + firstChar + ";" + " Maximal char value = " + lastChar);
+
+            bool myBooleanTrue, myBooleanFalse; //Variable: Type bool. May be "true" or "false"
+            myBooleanTrue = true;
+            myBooleanFalse = false;
+            Console.WriteLine("Type bool, may be = " + myBooleanTrue + ";" + " Type bool, may be = " + myBooleanFalse);
+
+            short minimalShort, maximalShort; //Variable: Type short. Min = -32768, Max =32767
+            minimalShort = short.MinValue;
+            maximalShort = short.MaxValue;
+            Console.WriteLine("Minimal short value = " + minimalShort + ";" + " Maximal short value = " + maximalShort);
+
+            ushort minimalUshrot, maximalUshort; //Variable: Type ushort. Min = 0, Max = 65535
+            minimalUshrot = ushort.MinValue;
+            maximalUshort = ushort.MaxValue;
+            Console.WriteLine("Minimal ushort value = " + minimalUshrot + ";" + " Maximal ushort value = " + maximalUshort);
+
+            int minimalIntValue, maximalIntValue; //Variable: Type int. Min = -2147483648, Max = 2147483647
+            minimalIntValue = int.MinValue;
+            maximalIntValue = int.MaxValue;
+            Console.WriteLine("Minimal int value = " + minimalIntValue + ";" + " Maximal int value = " + maximalIntValue);
+
+            uint minimalUintValue, maximalUintValue; //Variable: Type uint. Min = 0, Max = 4294967295
+            minimalUintValue = uint.MaxValue;
+            maximalUintValue = uint.MaxValue;
+            Console.WriteLine("Minimal uint value = " + minimalUintValue + ";" + " Maximal uint value = " + maximalUintValue);
+
+            long minimalLongValue, maximalLongValue; //Variabe: Type long. Min = -9223372036854775808, Max = 9223372036854775807
+            minimalLongValue = int.MinValue;
+            maximalLongValue = int.MaxValue;
+            Console.WriteLine("Minimal int value = " + minimalLongValue + ";" + " Maximal long value = " + maximalLongValue);
+
+            ulong minimalUlongValue, maximalUlongValue; //Variable: Type ulong. Min = 0, Max = 18446744073709551615
+            minimalUlongValue = ulong.MinValue;
+            maximalUlongValue = ulong.MaxValue;
+            Console.WriteLine("Minimal ulong value = " + minimalUlongValue + ";" + " Maximal ulong value = " + maximalUlongValue);
+
+            float minimalFloatValue, maximalFloatValue; //Variable: Type float. Min = -3,402823E+38, Max = 3,402823E+38
+            minimalFloatValue = float.MinValue;
+            maximalFloatValue = float.MaxValue;
+            Console.WriteLine("Minimal float value = " + minimalFloatValue + ";" + " Maximal float value = " + maximalFloatValue);
+
+            double minimalDoubleValue, maximalDoubleValue; //Variable: Type double. Min = -1,79769313486232E+308, Max = 1,79769313486232E+308 
+            minimalDoubleValue = double.MinValue;
+            maximalDoubleValue = double.MaxValue;
+            Console.WriteLine("Minimal double value = " + minimalDoubleValue + ";" + " Maximal double value = " + maximalDoubleValue);
+
+            decimal minimalDecimalValue, maximalDecimalValue; //Variable: Type decimal. Min = -79228162514264337593543950335, Max = 79228162514264337593543950335
+            minimalDecimalValue = decimal.MinValue;
+            maximalDecimalValue = decimal.MaxValue;
+            Console.WriteLine("Minimal decima; value = " + minimalDecimalValue + ";" + " Maximal decimal value = " + maximalDecimalValue);
+        }
+    }
+}

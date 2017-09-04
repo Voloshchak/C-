@@ -1,0 +1,141 @@
+using System;
+
+namespace hwapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           //Conditional operators in C #. Ternary operator
+
+           //if else
+            int numberFromConsole;
+            Console.WriteLine("Enter number:");
+            numberFromConsole = Convert.ToInt32(Console.ReadLine());
+            if (numberFromConsole % 2 == 0)
+            {
+                Console.WriteLine("Number " + numberFromConsole + " - even");
+            }
+            else
+            {
+                Console.WriteLine("Number " + numberFromConsole + " - odd");
+            }
+
+            //Determines which of the two numbers is greater: "if", "else if", "else"
+            int firtNumberFromConsole, secondNumberFromConsole;
+            Console.WriteLine("Enter first number:");
+            firtNumberFromConsole = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number:");
+            secondNumberFromConsole = Convert.ToInt32(Console.ReadLine());
+            if (firtNumberFromConsole > secondNumberFromConsole)
+            {
+                Console.WriteLine("The first number is greater than the second");
+            }
+            else if (firtNumberFromConsole < secondNumberFromConsole)
+            {
+                Console.WriteLine("The second number is greater than the first");
+            }
+            else
+            {
+                Console.WriteLine("The numbers are equal");
+            }
+
+            //Logical operators "!", "||" and "&&"
+            int temperatureInTheYard;
+            Console.WriteLine("Enter temperature in the yard:");
+            temperatureInTheYard = Convert.ToInt32(Console.ReadLine());
+            if (temperatureInTheYard < -20 || temperatureInTheYard > 40)
+            {
+                Console.WriteLine("Stay in home!");
+            }
+            else
+            {
+                Console.WriteLine("You can go for a walk");
+            }
+
+            //Switch
+            int numberOfTheWeek;
+            Console.WriteLine("Enter the day number of the week");
+            numberOfTheWeek = Convert.ToInt32(Console.ReadLine());
+            switch (numberOfTheWeek)
+            {
+                case 1:
+                Console.WriteLine("Monday");
+                break;
+                case 2:
+                Console.WriteLine("Tuesday");
+                break;
+                case 3:
+                Console.WriteLine("Wednesday");
+                break;
+                case 4:
+                Console.WriteLine("Thursday");
+                break;
+                case 5:
+                Console.WriteLine("Friday");
+                break;
+                case 6:
+                Console.WriteLine("Saturday");
+                break;
+                case 7:
+                Console.WriteLine("Sunday");
+                break;
+                default:
+                Console.WriteLine("Error");
+                break;
+            }
+
+            //Ternary operator "?:"
+            int numberFromConsoleTernaryOperator;
+            Console.WriteLine("Enter number:");
+            numberFromConsoleTernaryOperator = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(numberFromConsoleTernaryOperator % 2 == 0 ? "Number even" : "Number odd");
+
+            //Home work
+            //Task 1: From the keyboard are entered two numbers - the number of goals scored by the hosts and guests in the football match. Show the result of the game on the screen - the hosts / guests / draw won.
+            //Task 2: Write a program that will check the number for multiplicity by 3 and 7 (these are the numbers 21, 42, 63 ...). Display a message on the screen.
+
+            //Task 1
+
+            int goalsScoredHosts, goalsScoredGuests;
+            Console.WriteLine("Enter of goals scored by the hosts:");
+            goalsScoredHosts = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter of goals scored by the guests:");
+            goalsScoredGuests = Convert.ToInt32(Console.ReadLine());
+            if (goalsScoredGuests > goalsScoredHosts)
+            {
+                Console.WriteLine("Winner is Guests");
+            }
+            else if ( goalsScoredHosts > goalsScoredGuests)
+            {
+                Console.WriteLine("Winner is Hosts");
+            }
+            else
+            {
+                Console.WriteLine("Draw");
+            }
+
+            //Task 2
+
+            int numberForMultiplicity;
+            Console.WriteLine("Enter number for check multiplicity 3 and 7:");
+            numberForMultiplicity = Convert.ToInt32(Console.ReadLine());
+            if (numberForMultiplicity % 3 == 0 || numberForMultiplicity % 7 == 0)
+            {
+                Console.WriteLine("The number of multiples of 3 and 7");
+            }
+            else if (numberForMultiplicity % 3 == 0)
+            {
+                Console.WriteLine("The number of multiples only 3");
+            }
+            else if (numberForMultiplicity % 7 == 0)
+            {
+                Console.WriteLine("The number of multiples only 7");
+            }
+            else
+            {
+                Console.WriteLine("Error");
+            }
+        }
+    }
+}
